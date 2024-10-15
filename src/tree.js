@@ -4,20 +4,20 @@ const tree = (dirPath, depth) => {
 
   if (depth < 0) return;
   else
-    fs.readdir(dirPath, { withFileTypes: true }, async (err, files) => {
-      try {
-        files.forEach((file) => {
-          const filePath = path.join(dirPath, file.name);
-          console.log(" ".repeat(depth * 2) + file.name);
-
-          if (file.isDirectory()) {
-            tree(filePath, depth - 1);
-          }
-        });
-      } catch (err) {
+    fs.readdir(dirPath, { withFileTypes: true }, (err, files) => {
+      if(err) {
         console.error(`Error reading the catalog: ${err}`);
         return;
       }
+
+      files.forEach((file) => {
+        const filePath = path.join(dirPath, file.name);
+        console.log(" ".repeat(depth * 2) + file.name);
+
+        if (file.isDirectory()) {
+          tree(filePath, depth - 1);
+        }
+      });
     });
 };
 
