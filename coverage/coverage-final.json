@@ -1,0 +1,31 @@
+{
+  "C:\\Users\\umnic\\OneDrive\\Документы\\lerning_js\\treeNode\\src\\sum.js": {
+    "path": "C:\\Users\\umnic\\OneDrive\\Документы\\lerning_js\\treeNode\\src\\sum.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 2, "column": 4 },
+        "end": { "line": 2, "column": 15 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "sum",
+        "decl": {
+          "start": { "line": 1, "column": 16 },
+          "end": { "line": 1, "column": 19 }
+        },
+        "loc": {
+          "start": { "line": 1, "column": 24 },
+          "end": { "line": 3, "column": 1 }
+        },
+        "line": 1
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 1 },
+    "f": { "0": 1 },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "47a0a6c2eb3e0958715a541db5ded7bc4884c725"
+  }
+}
